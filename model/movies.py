@@ -2,12 +2,6 @@ class Movies():
     def __init__(self):
         self.movies = {}
         self.id = 0
-        self.create_movie({"title": "Interstellar", "year": 2014, "director": "Christopher Nolan"})
-        self.create_movie({'title': 'Frankenweenie', 'year': 2012, 'director': 'Tim Burton'})
-        self.create_movie({'title': 'Donnie Darko', 'year': 2001, 'director': 'Richard Kelly'})
-        self.create_movie({'title': 'Csillagok között', 'year': 2014, 'director': 'Christopher Nolan'})
-        self.create_movie({'title': 'A majmok bolygója', 'year': 2001, 'director': 'Tim Burton'})
-        self.create_movie({'title': 'A majmok bolygója', 'year': 1968, 'director': 'Franklin J. Schaffner'})
 
     def _does_movie_exist(self, id):
         return id in self.movies
