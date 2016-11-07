@@ -1,2 +1,6 @@
+assertpy
 flask
+pytest
+behave
+mock
 gunicorn
