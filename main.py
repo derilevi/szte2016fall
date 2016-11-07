@@ -26,5 +26,3 @@ app.register_blueprint(series, url_prefix='/series')
 
 if __name__ == '__main__':
     app.run()
-
-application = app

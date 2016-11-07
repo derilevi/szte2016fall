@@ -2,8 +2,8 @@
 
 language: python # here is the language specification
 python:
-  - "2.6"  # all about the versions
-  - "2.7"
+  - "2.7"  # all about the versions
+  - "3.5"
 # install the dependecies from the imported txt
 install: "pip install -r requirements.txt"
 # the test running command
@@ -20,4 +20,4 @@ deploy:
   app: $HEROKU_APP_NAME
   on:
     branch: derilevi
-    condition: $TRAVIS_PYTHON_VERSION = 2.7
+    condition: $TRAVIS_PYTHON_VERSION = 3.5
