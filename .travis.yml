@@ -7,7 +7,10 @@ python:
 # install the dependecies from the imported txt
 install: "pip install -r requirements.txt"
 # the test running command
-script: py.test
+script: py.test --cov=./
+#coverage
+after_success:
+  - codecov
 # here is some Heroku configuration
 deploy:
   provider: heroku
@@ -16,5 +19,5 @@ deploy:
     secure: $HEROKU_KEY # Heroku env variable
   app: $HEROKU_APP_NAME
   on:
-    branch: series
+    branch: derilevi
     condition: $TRAVIS_PYTHON_VERSION = 2.7

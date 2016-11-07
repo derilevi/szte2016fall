@@ -3,5 +3,7 @@ flask
 pytest
 behave
 mock
-gunicorn
 requests
+gunicorn
+pytest-cov
+codecov
