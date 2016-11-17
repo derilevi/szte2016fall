@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import os
 
 from blueprints.movies import movies
 from blueprints.series import series
