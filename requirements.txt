@@ -7,3 +7,4 @@ requests
 gunicorn
 pytest-cov
 codecov
+pymongo
