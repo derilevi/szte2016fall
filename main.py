@@ -2,8 +2,9 @@ from flask import Flask, render_template
 
 from blueprints.movies import movies
 from blueprints.series import series
+
 from model.mongo import Movies
-from model.series import Series
+from model.mongo import Series
 
 app = Flask(__name__)
 
