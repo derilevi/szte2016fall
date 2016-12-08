@@ -87,3 +87,14 @@ class Users:
 
     def get_user(self, username):
         return self.users.find_one({'username': username}, projection={'_id': False})
+
+
+class Health:
+    def check_connection(self):
+        try:
+            client = MongoClient(getenv('MONGO_SERVER'), int(getenv('MONGO_PORT')))
+            db = client[getenv('MONGO_DB')]
+            db.authenticate(getenv('MONGO_USER'), getenv('MONGO_PASS'))
+        except:
+            return False
+        return True
