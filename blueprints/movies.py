@@ -1,5 +1,5 @@
 from flask import Blueprint, current_app, jsonify, request
-from users import login_required
+from blueprints.users import login_required
 
 movies = Blueprint('movies', __name__)
 
